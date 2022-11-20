@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/playerLayout1Question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Вы дошли до деревни, чтобы отдать инструмент, но обнаружили что - то странное.
+    Было слишком тихо. Петухи не кукарекали, дети не играли. Вы решили зайти в дом, но там тоже никого не было. Похоже, что все пропали!
+    У вас началась паника. Вы не знаете что делать. Перед вашими глазами был сейф. Что бы вы хотели с ним сделать?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginHorizontal="32dp"
+                android:gravity="center"
+                android:layout_marginVertical="32dp" />
+
+            <LinearLayout
+                android:id="@+id/playerLayout1ButtonCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="355dp">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/playerLayout1Chronology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Хронология" />
+            <Button
+                android:id="@+id/playerLayout1Exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Назад" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

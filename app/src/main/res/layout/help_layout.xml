@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:text="Помощь" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:text="Отображение карты" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:text="Если карта не отображается, то необходим доступ в интернет."/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:text="Посмортите пример" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:text="Чтобы полностью понять как работает приложение, посмотрите пример, который называтеся Пример.quest . Он доступен как для проигрывателя квестов, так для редактора."/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:text="ID Перехода" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:text="В редакторе вы можете создавать свои квесты, а затем делиться ими с друзьями. Для этого вам нужно нажать на &quot;СОЗДАТЬ НОВЫЙ КВЕСТ&quot;, затем нажмите добавить. Вы можете выбрать 4 типа странички квеста. В каждом типе есть поле ID перехода, в котором нужно указать ID странички, на которую будет переходить данная, т.е какая страничка будет следующей. ID текущей странички можено узнать либо в списке, либо в редакторе странички. Если ID перехода будет ссылаться на несуществующий ID, например -1, то это считается, что данная страничка последняя в квесте. После нее финиш."/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:text="Редактирование готовых квестов" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center"
+                    android:text="Вы можете редактировать уже готовые квесты. Для этого закиньте квест в директорию /CubesQuest и перейдите в редактор."/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/help_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

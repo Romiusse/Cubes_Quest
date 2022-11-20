@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/playerLayout2Question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Вы решили открыть сейф. Вы подошли поближе, осмотрели его, нашли ввод пароля.
+Но вот вопрос. Какой пароль от этого сейфа?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginHorizontal="32dp"
+                android:gravity="center"
+                android:layout_marginVertical="32dp" />
+
+            <TextView
+                android:id="@+id/playerLayout2hintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="32dp"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <EditText
+                android:id="@+id/playerLayout2Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginVertical="32dp"
+                android:layout_marginHorizontal="32dp"/>
+
+            <Button
+                android:id="@+id/playerLayout2EnterButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:text="Ввод" />
+
+            <TextView
+                android:id="@+id/playerLayout2HintInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Подсказка через: 45c"/>
+
+            <Button
+                android:id="@+id/playerLayout2Chronology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="64dp"
+                android:text="Хронология" />
+            <Button
+                android:id="@+id/playerLayout2Exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Назад" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
